@@ -53,10 +53,16 @@ def getAirVolume(h,m):
     flatVol = flatVolume(h,2)-flatVolume(h,min(2,h/m))
     return slopeVol + flatVol
 
+def getAirVolumeClosedFormula(h,m):
+    k = min(2,h/m)
+    slopeVol = 2*m*((1/6)*math.sqrt(-(k-2)*k)*(k+1)*(2*k-3)+math.asin(math.sqrt(k/2)))
+    flatVol = 2*h*math.asin(math.sqrt(1-k/2))-h*(k-1)*math.sqrt(-(k-2)*k)
+    return slopeVol + flatVol
+
 def getWaterVolume(h,angle):
     totalVolume = math.pi*h
     m = getPlaneGradient(angle)
-    airVolume = getAirVolume(h,m)
+    airVolume = getAirVolumeClosedFormula(h,m)
     return totalVolume-airVolume
 
 def getPlot():
