@@ -27,10 +27,9 @@ Volume under flat base: $\int_{\min(2,h/m)}^2 \int_{-\sqrt{1-(x-1)^2}} ^ {\sqrt{
 
 which Wolfram evaluates to:
 
-Volume under slope: $\frac{m}{3}\sqrt{-(x-2)x}(2x^2-x-3)-2m\arcsin{\sqrt{1-x/2}} + C$
+Volume under slope: $\frac{m}{3}\sqrt{-(x-2)x}(2x^2-x-3)-2m\arcsin{\sqrt{1-x/2}} + C$, evaluated from $0$ to $\min(2,h/m)$
 
-Volume under flat base: $h(x-1)\sqrt{-(x-2)x} - 2h\arcsin{\sqrt{1-x/2}} + C$
-
+Volume under flat base: $h(x-1)\sqrt{-(x-2)x} - 2h\arcsin{\sqrt{1-x/2}} + C$, evaluated from $\min(2,h/m)$ to $2$
 
 We evaluate these for cylinders of height 1 to 10, for 1 to 89 degrees of the base from the horizontal:
 
