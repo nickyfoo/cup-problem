@@ -19,7 +19,7 @@ This is solved as $h = mx$, so $x = h/m$, notice that there can be a non-interse
 
 The volume of air is thus total volume - volume under slope - volume under flat base.
 
-Total volume: $PI*h$
+Total volume: $\pi*h$
 
 Volume under slope: $\int_0 ^{\min(2,h/m)} \int_{-\sqrt{1-(x-1)^2}} ^ {\sqrt{1-(x-1)^2}}  mx dy dx$
 
