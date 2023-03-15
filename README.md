@@ -25,11 +25,17 @@ Volume under slope: $\int_0 ^{\min(2,h/m)} \int_{-\sqrt{1-(x-1)^2}} ^ {\sqrt{1-(
 
 Volume under flat base: $\int_{\min(2,h/m)}^2 \int_{-\sqrt{1-(x-1)^2}} ^ {\sqrt{1-(x-1)^2}} h dy dx$
 
-which Wolfram evaluates to:
+Which if we let $k = \min(2,h/m)$ Wolfram evaluates to:
 
-Volume under slope: $\frac{m}{3}\sqrt{-(x-2)x}(2x^2-x-3)-2m\arcsin{\sqrt{1-x/2}} + C$, evaluated from $0$ to $\min(2,h/m)$
+Volume under slope: 
 
-Volume under flat base: $h(x-1)\sqrt{-(x-2)x} - 2h\arcsin{\sqrt{1-x/2}} + C$, evaluated from $\min(2,h/m)$ to $2$
+![image](https://user-images.githubusercontent.com/67411893/225356228-000c122f-c2ba-4140-86e2-510d49cadd31.png)
+
+Volume under flat base: 
+
+![image](https://user-images.githubusercontent.com/67411893/225356297-49befe25-1736-4d5c-9adf-059a0c65e991.png)
+
+A closed formula is thus $2m((1/6)\sqrt{-(k-2)k}(k+1)(2k-3)+\arcsin{\sqrt{k/2}}) + 2h\arcsin{\sqrt{1-k/2}}-h(k-1)\sqrt{-(k-2)k}$
 
 We evaluate these for cylinders of height 1 to 10, for 1 to 89 degrees of the base from the horizontal:
 
